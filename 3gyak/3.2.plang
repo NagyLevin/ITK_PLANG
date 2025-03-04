@@ -1,0 +1,25 @@
+PROGRAM GYAK3
+VÁLTOZÓK:
+i,k,x,y,a,b,c,beszam,osztok: EGÉSZ,
+beszöveg,mit,mire,szo: SZÖVEG
+BE: beszam
+i:= 1
+osztok:=0
+CIKLUS AMÍG i < beszam + 1 
+HA beszam MOD i = 0 AKKOR osztok:= osztok + 1
+HA_VÉGE
+i:= i +1
+CIKLUS_VÉGE
+KI:osztok
+
+
+
+
+
+
+
+
+
+
+
+PROGRAM_VÉGE

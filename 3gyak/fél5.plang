@@ -1,0 +1,28 @@
+PROGRAM zh2
+  VÁLTOZÓK:
+    n, i,x,y: EGÉSZ
+ 
+  BE: n
+  i := 0
+x:= 0
+y:= n + 1
+CIKLUS AMÍG x < y
+i := 0
+KI:sv
+ **HA 
+  CIKLUS AMÍG i < y
+HA i < n AKKOR KI:" "
+HA_VÉGE
+HA i = n AKKOR CIKLUS AÍMG i < nKI:"*"
+HA_VÉGE
+HA i > n AKKOR KI:" "
+HA_VÉGE
+    
+
+  i:= i +1
+  CIKLUS_VÉGE
+
+X:= x +1
+
+CIKLUS_VÉGE
+PROGRAM_VÉGE

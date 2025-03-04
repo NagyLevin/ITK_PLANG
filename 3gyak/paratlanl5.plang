@@ -1,0 +1,48 @@
+** kordinátaösszeg n, akkor határpont
+** |x| + |4| <= n akkor körvonalon vagyok
+PROGRAM zh2
+  VÁLTOZÓK:
+    n, i, x, y, z, p, h, j: EGÉSZ
+ 
+  BE: n
+  i := 0
+  x := 0
+  y := 0
+  z := n + 1
+  p := 0
+  h := 0
+  j := 0
+  ** valtozok
+  CIKLUS AMÍG i < n + 1
+    HA i < n AKKOR
+      CIKLUS AMÍG p < n
+        HA p MOD 2 = 0 AKKOR
+          KI: " "
+        KÜLÖNBEN
+          KI: "*"
+        HA_VÉGE
+        p := p + 1
+      CIKLUS_VÉGE
+    HA_VÉGE
+    HA i = n AKKOR
+      KI: SV
+      CIKLUS AMÍG h < n + 1
+        KI: "*"
+        h := h + 1
+      CIKLUS_VÉGE
+      z := 1
+    HA_VÉGE
+    HA z = 1 AKKOR
+      KI: SV
+      CIKLUS AMÍG j < n
+        HA j MOD 2 = 0 AKKOR
+          KI: " "
+        KÜLÖNBEN
+          KI: "*"
+        HA_VÉGE
+        j := j + 1
+      CIKLUS_VÉGE
+    HA_VÉGE
+    i := i + 1
+  CIKLUS_VÉGE
+PROGRAM_VÉGE

@@ -1,0 +1,24 @@
+PROGRAM gyak3
+  VÁLTOZÓK:
+    n, i, x, y: EGÉSZ
+ 
+  BE: n
+n:= n - 1
+  i := 0
+  x := n
+  y := -n
+  CIKLUS AMÍG y <= n
+    x := -n
+    CIKLUS AMÍG x <= n
+      HA |x| + |y| <= n AKKOR
+        KI: "*"
+      KÜLÖNBEN
+        KI: " "
+      HA_VÉGE
+      x := x + 1
+    CIKLUS_VÉGE
+    y := y + 1
+   
+    KI: SV
+  CIKLUS_VÉGE
+PROGRAM_VÉGE

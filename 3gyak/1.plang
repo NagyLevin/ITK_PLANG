@@ -1,0 +1,13 @@
+PROGRAM zh2
+  VÁLTOZÓK:
+    n, i: EGÉSZ
+ 
+  BE: n
+  i := 0
+  CIKLUS AMÍG i < n
+    HA i MOD 2 /= 0 AKKOR
+      KI: i KI:" "
+    HA_VÉGE
+    i := i + 1
+  CIKLUS_VÉGE
+PROGRAM_VÉGE
