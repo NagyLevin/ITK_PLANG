@@ -1,0 +1,9 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    s: SZÖVEG,
+    b: KARAKTER
+  BE: s
+  b:= s[0]
+
+  KI: s[|s|-1] = b
+PROGRAM_VÉGE

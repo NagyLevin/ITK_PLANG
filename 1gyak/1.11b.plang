@@ -1,0 +1,14 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    a, b, c, d,e, f,g, s: EGÉSZ,
+    h: valós
+ 
+  BE: a, b, c, d
+  
+  e:= c - a
+  f:= d - b
+  g:= e^(2) + f^(2)
+  h:= g^(0.5)
+
+  KI: h
+PROGRAM_VÉGE

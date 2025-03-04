@@ -1,0 +1,27 @@
+PROGRAM hazi
+  VÁLTOZÓK:
+    szöveg1, szöveg2: SZÖVEG,
+    x, i, a, b, c, y, szöveghossz: EGÉSZ
+ 
+  BE: szöveg1
+  BE: szöveg2
+  i := 0
+  szöveghossz := 0
+  x := 0
+  CIKLUS AMÍG i < |szöveg1|
+    HA szöveg1[i] = szöveg2[x] AKKOR
+      szöveghossz := szöveghossz + 1
+      x := x + 1
+    HA_VÉGE
+    i := i + 1
+  CIKLUS_VÉGE
+  HA szöveghossz = |szöveg2| AKKOR
+    KI: "BENNE VAN"
+  HA_VÉGE
+  HA szöveghossz > |szöveg2| AKKOR
+    KI: "Többször BENNE VAN"
+  HA_VÉGE
+  HA szöveghossz < |szöveg2| AKKOR
+    KI: "NINCS BENNE"
+  HA_VÉGE
+PROGRAM_VÉGE

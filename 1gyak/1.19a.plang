@@ -1,0 +1,12 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    s,s2: SZÖVEG,
+    b: KARAKTER,
+	x: egész
+  BE: s
+  x:= 0
+s2:= ""
+ ciklus  s2:=s2 + s[x] x:= x+1 amig s[x] /= ' '
+
+  KI:s2
+PROGRAM_VÉGE

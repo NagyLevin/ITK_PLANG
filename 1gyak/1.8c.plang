@@ -1,0 +1,11 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    a, b, c, d, e, f, n: VALÓS
+ 
+  BE: a, b, n
+  c := b / a
+  d := c * b
+  f := c ^ (n - 1)
+  e := a * f
+  KI: e
+PROGRAM_VÉGE

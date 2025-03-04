@@ -1,0 +1,30 @@
+PROGRAM test4
+  VÁLTOZÓK:
+    sz1,sz2: SZÖVEG,i,j,x,y,volt:EGÉSZ
+BE:sz1
+BE:sz2
+i:= 0
+j:= 0
+x:= 0
+y:= 0
+volt:= 0
+CIKLUS AMÍG i < |sz1|
+HA sz1[i] = sz2[j] ÉS VOLT = 0 AKKOR
+
+
+
+CIKLUS AMÍG sz1[i+j] = sz2[j] ÉS j < |sz2|-1 
+j:= j + 1
+CIKLUS_VÉGE 
+KÜLÖNBEN
+KI:sz1[i]
+HA_VÉGE
+i:= i + j
+HA j = |sz2|-1 AKKOR volt:= 1
+HA_VÉGE
+
+j:= 0
+i:= i + 1
+CIKLUS_VÉGE
+
+PROGRAM_VÉGE

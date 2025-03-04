@@ -1,0 +1,12 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    a, b, c, d, f, s: EGÉSZ,
+    t: valós
+ 
+  BE: a, b
+  
+  c:= a^(2) + b^(2)
+  t:= c^(0.5)
+
+  KI: t
+PROGRAM_VÉGE

@@ -1,0 +1,7 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    s: SZÖVEG
+ 
+  BE: s
+  KI: s[0] = ' '
+PROGRAM_VÉGE

@@ -1,0 +1,10 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    s,s2: SZÖVEG,
+    b: KARAKTER
+  BE: s,s2
+  
+  b:= s[0]
+
+  KI:  |s| > 4 ÉS |s2| > 4 ÉS s[0] = s2[0] ÉS s[1] = s2[1] ÉS s[2] = s2[2] ÉS s[3] = s2[3] ÉS s[4] = s2[4] 
+PROGRAM_VÉGE

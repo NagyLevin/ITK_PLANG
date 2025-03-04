@@ -1,0 +1,16 @@
+PROGRAM hazi
+  VÁLTOZÓK:
+    szöveg1, szöveg2: SZÖVEG,
+    x, i, a, b, c: EGÉSZ
+ 
+  BE: szöveg1
+  BE: szöveg2
+
+i:= szöveg2 @ szöveg1
+
+
+ KI: i < |szöveg2|
+  **KI:szöveg2 @ szöveg1
+ **KI: " "
+ **KI: |szöveg2| 
+PROGRAM_VÉGE

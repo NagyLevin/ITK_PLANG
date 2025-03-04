@@ -1,0 +1,9 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    a,b,c,d: VALÓS
+ 
+  BE: a,b
+  c:= b-a
+  d:= b + c
+  KI: d
+PROGRAM_VÉGE

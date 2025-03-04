@@ -1,0 +1,12 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    f, s, t: VALÓS,
+    a, b, c, d: EGÉSZ
+ 
+  BE: a, b, c
+  d := a + b + c
+  s := d DIV 2
+  f := s * (s - a) * (s - b) * (s - c)
+  t := f ^ (0.5)
+  KI: t
+PROGRAM_VÉGE

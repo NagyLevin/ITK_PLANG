@@ -1,0 +1,21 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    s, s2, s3: SZÖVEG,
+    b: KARAKTER,
+    x, x2: EGÉSZ
+ 
+  BE: s
+  x := 0
+  x2 := 0
+  s2 := ""
+  CIKLUS
+    s2 := s2 + s[x]
+    x := x + 1
+  AMÍG s[x] /= ' '
+  CIKLUS
+    s[x2] := ' '
+    x2 := x2 + 1
+  AMÍG s[x2] = s2[x2] ÉS x2 < |s2| - 1
+  s[x2] := ' '
+  KI: s
+PROGRAM_VÉGE

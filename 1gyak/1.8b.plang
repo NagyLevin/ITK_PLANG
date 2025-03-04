@@ -1,0 +1,11 @@
+PROGRAM hello
+  VÁLTOZÓK:
+    a,b,c,d,e,n: VALÓS
+ 
+  BE: a,b,n
+  c:= b-a
+  d:= b + c		**differencialhanyados
+  e:= a+(n-1)*c  
+
+  KI: e
+PROGRAM_VÉGE

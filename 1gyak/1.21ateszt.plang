@@ -1,0 +1,28 @@
+PROGRAM hazi
+  VÁLTOZÓK:
+    szöveg1, szöveg2: SZÖVEG,
+    x, i, a, b, c, y, szöveghossz: EGÉSZ
+ 
+  BE: szöveg1
+  BE: szöveg2
+  i := 0
+  szöveghossz := 0
+  HA |szöveg1| > |szöveg2| AKKOR
+    x := |szöveg1|
+  HA_VÉGE
+  HA |szöveg2| > |szöveg1| AKKOR
+    x := |szöveg2|
+  HA_VÉGE
+  CIKLUS AMÍG i < x
+    HA szöveg1[i] = szöveg2[i] AKKOR
+      y := i
+      CIKLUS AMÍG szöveg1[y] = szöveg2[y]
+        KI: "IGAZ"
+        KI: " "
+        y := y + 1
+        szöveghossz := szöveghossz + 1
+      CIKLUS_VÉGE
+    HA_VÉGE
+    i := i + 1
+  CIKLUS_VÉGE
+PROGRAM_VÉGE
