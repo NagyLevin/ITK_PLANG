@@ -1,0 +1,42 @@
+PROGRAM Hszog
+
+Valtozok:
+mennyi,szamlalo,x,i,z,mennyimsz :EGESZ,
+jel:SZOVEG
+BE:mennyi
+mennyi:= mennyi + 1
+i:= 0
+szamlalo:= 0
+x:= mennyi
+jel:= "*"
+mennyimsz:= 0
+z:= 0
+
+CIKLUS AMIG x > 0
+KI:SV
+
+mennyimsz:= mennyi-szamlalo
+
+CIKLUS AMÍG mennyimsz > 0
+KI:" "
+mennyimsz := mennyimsz -1
+
+CIKLUS_VÉGE
+
+CIKLUS AMÍG z < szamlalo
+
+KI:" "
+KI:jel
+z:= z + 1
+
+CIKLUS_VÉGE
+z:= 0
+
+x:= x-1
+szamlalo:= szamlalo + 1
+
+CIKLUS_VEGE
+
+
+
+PROGRAM_VEGE
