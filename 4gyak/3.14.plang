@@ -1,0 +1,28 @@
+PROGRAM TEST4
+VALTOZOK
+N,j,a,b,osszeg,szorzat:EGÉSZ,atlag,i:VALÓS
+BE:N
+i:= 0
+j:= 0
+a:= 0
+b:= 0
+osszeg:= 0
+CIKLUS AMÍG i < N
+
+CIKLUS AMÍG j < 2
+BE:a
+
+HA j = 1 AKKOR szorzat:= a * b
+HA_VÉGE
+j:= j + 1
+b:= a
+CIKLUS_VÉGE
+osszeg:= osszeg + szorzat
+szorzat:= 0
+j:= 0
+
+I:= i + 1
+CIKLUS_VÉGE
+KI:osszeg
+
+PROGRAM_VÉGE

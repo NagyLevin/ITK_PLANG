@@ -1,0 +1,10 @@
+PROGRAM TEST4
+VALTOZOK
+a,b,c,i,j:EGÉSZ,osszeg,atlag:VALÓS
+BE:a
+BE:b
+BE:c
+osszeg:= a + b + c
+atlag:= osszeg / 3
+ki:atlag
+PROGRAM_VÉGE

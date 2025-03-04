@@ -1,0 +1,67 @@
+PROGRAM test4
+  VÁLTOZÓK:
+    sz,hszo,lhszo: SZÖVEG,
+    
+    i,j,max,ism,volt,z: EGÉSZ
+hszo:=""
+lhszo:=""
+ ism:= 0
+  BE: sz
+  i := 0
+z:= 0
+volt:= 0
+j:= 0
+max:= 0
+  CIKLUS AMÍG i < |sz|
+    HA sz[i] = ' ' AKKOR
+	CIKLUS AMÍG j < i
+	hszo:= hszo + sz[j]
+	j:= j + 1
+	volt:= 1
+	ism:= ism+ 1
+	CIKLUS_VÉGE
+
+      
+    HA_VÉGE
+
+HA max <= ism ÉS volt= 1 AKKOR max:= ism lhszo:= hszo j:= i hszo:= "" volt:= 0 ism:= 0
+HA_VÉGE
+HA max >= ism ÉS volt= 1 AKKOR
+j:= i
+hszo:= ""
+ism:= 0
+volt:= 0
+HA_VÉGE
+
+
+    i := i + 1
+  CIKLUS_VÉGE
+CIKLUS AMÍG j < |sz|
+	hszo:= hszo + sz[j]
+	j:= j + 1
+	volt:= 1
+	ism:= ism+ 1
+CIKLUS_VÉGE
+HA max <= ism ÉS volt= 1 AKKOR max:= ism lhszo:= hszo j:= i hszo:= "" volt:= 0 ism:= 0
+HA_VÉGE
+HA max >= ism ÉS volt= 1 AKKOR
+j:= i
+hszo:= ""
+ism:= 0
+volt:= 0
+HA_VÉGE
+
+
+ ** KI: max
+**KI:lhszo
+
+CIKLUS AMÍG z < |lhszo|
+HA lhszo[z] /= ' ' AKKOR KI: lhszo[z]
+HA_VÉGE
+z:= z + 1
+CIKLUS_VÉGE
+
+
+
+
+PROGRAM_VÉGE

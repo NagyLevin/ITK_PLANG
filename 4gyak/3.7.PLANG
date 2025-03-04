@@ -1,0 +1,30 @@
+PROGRAM HAZI
+VALTOZÓK
+A,B,oszto,osztoszam,maxo,sz :EGÉSZ
+BE:A
+BE:B
+sz:=0
+oszto:=1
+osztoszam:= 0
+maxo:= 0
+CIKLUS AMÍG A <= B
+
+CIKLUS AMÍG oszto <= A
+HA A MOD oszto = 0 AKKOR osztoszam:= osztoszam + 1
+HA_VÉGE
+oszto:= oszto + 1
+CIKLUS_VÉGE
+HA maxo < osztoszam AKKOR maxo:= osztoszam sz:= oszto-1
+osztoszam:= 0
+oszto:=1
+KÜLÖNBEN
+osztoszam:= 0
+oszto:= 1
+HA_VÉGE
+A:= A + 1
+CIKLUS_VÉGE
+KI:maxo
+KI:SV
+KI:SZ
+
+PROGRAM_VÉGE

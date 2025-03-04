@@ -1,0 +1,18 @@
+PROGRAM test4
+  VÁLTOZÓK:
+    sz: SZÖVEG,
+    kar, pkar: KARAKTER,
+    i, kbetu: EGÉSZ
+ 
+  BE: sz
+  kar := 'a'
+  i := 0
+  kbetu := 0
+  CIKLUS AMÍG i < |sz|
+    HA sz[i] = kar AKKOR
+      kbetu := kbetu + 1
+    HA_VÉGE
+    i := i + 1
+  CIKLUS_VÉGE
+  KI: kbetu
+PROGRAM_VÉGE

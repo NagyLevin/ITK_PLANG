@@ -1,0 +1,19 @@
+PROGRAM TEST4
+VALTOZOK
+N,a,j,osszeg,atlag,i:VALÓS
+BE:N
+a:= 0
+osszeg:= 0
+i:= 0
+CIKLUS AMIG N /= i
+BE:a
+osszeg:= osszeg + a
+i:= i + 1
+
+CIKLUS_VÉGE
+
+
+atlag:= osszeg / i
+
+ki:atlag
+PROGRAM_VÉGE
