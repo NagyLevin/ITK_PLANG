@@ -1,0 +1,27 @@
+PROGRAM test4
+  VÁLTOZÓK:
+   sz, ezt,erre: SZÖVEG,i,j,szaml,y,volt:EGÉSZ
+BE:sz
+
+i:= 0
+j:= 0
+szaml:= 0
+
+CIKLUS AMÍG i < |sz|
+
+HA sz[i] = '(' AKKOR
+i:= i + 1
+CIKLUS AMÍG sz[i] /= ')'
+KI:sz[i]
+i:= i + 1
+CIKLUS_VÉGE
+HA_VÉGE
+
+i:= i + 1
+CIKLUS_VÉGE
+
+
+
+
+
+PROGRAM_VÉGE

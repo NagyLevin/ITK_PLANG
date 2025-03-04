@@ -1,0 +1,24 @@
+PROGRAM ALMA
+VÁLTOZÓK:
+i,k,x,y,a,b,c,votmar,egyezes: EGÉSZ ,
+szöveg,mit,mire,szo: SZÖVEG
+BE: szöveg
+mit:= körte
+mire:= alma
+szo:= ""
+i:= 0
+k:= 0
+CIKLUS AMIG i < |szöveg|
+szo:= szo + szöveg[i]
+x:= x + 1
+HA szöveg[i] = " " AKKOR
+
+CIKLUS AMIG k < |mit|
+HA szo[k] = mit[k] AKKOR egyezes:= egyezes + 1
+HA_VÉGE
+HA egyezes = |mit| AKKOR KI: "VAN ILYEN"
+HA_VÉGE
+HA_VÉGE
+PROGRAM_VÉGE
+
+

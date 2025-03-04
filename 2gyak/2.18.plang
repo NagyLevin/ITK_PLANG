@@ -1,0 +1,17 @@
+PROGRAM GYAK3
+VÁLTOZÓK:
+i,k,x,y,a,b,c,votmar,egyezes: EGÉSZ,
+beszöveg,mit,mire,szo: SZÖVEG
+BE: beszöveg
+i:= 0
+
+CIKLUS AMÍG i < |beszöveg|
+HA beszöveg[i] = NAGY beszöveg[i] AKKOR beszöveg[i]:= KIS beszöveg[i]
+KÜLÖNBEN
+beszöveg[i]:= NAGY beszöveg[i]
+HA_VÉGE
+i:= i + 1
+CIKLUS_VÉGE
+KI:BESZÖVEG
+PROGRAM_VÉGE
+

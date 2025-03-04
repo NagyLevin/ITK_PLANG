@@ -1,0 +1,14 @@
+PROGRAM gyak2
+  VÁLTOZÓK:
+    i, x, y: EGÉSZ,
+    nev: SZÖVEG
+ 
+  BE: nev
+  i := 0
+  CIKLUS AMÍG i < |nev|
+    HA nev[i] = NAGY nev[i] ÉS nev[i] /= ' ' AKKOR
+      KI: nev[i] KI:"." KI:" "
+    HA_VÉGE
+    i := i + 1
+  CIKLUS_VÉGE
+PROGRAM_VÉGE

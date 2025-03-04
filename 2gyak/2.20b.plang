@@ -1,0 +1,20 @@
+PROGRAM GYAK3
+VÁLTOZÓK:
+i,k,x,y,a,b,c,votmar,egyezes: EGÉSZ,
+beszöveg,mit,mire,szo: SZÖVEG
+BE: beszöveg
+i:= |beszöveg|
+
+CIKLUS AMÍG i > 0
+KI:BESZÖVEG[i-1]
+i:= i - 1
+CIKLUS_VÉGE
+
+
+
+
+
+
+
+
+PROGRAM_VÉGE

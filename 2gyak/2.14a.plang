@@ -1,0 +1,61 @@
+PROGRAM alma
+  VÁLTOZÓK:
+    i, k, x, y, a, b, c, votmar, egyezesek: EGÉSZ,
+    beszöveg, mit, mire, szo: SZÖVEG
+ 
+  BE: beszöveg
+  BE: mit
+  BE: mire
+  szo := ""
+  egyezesek := 0
+  votmar := 0
+  i := 0
+  x := 0
+  k := 0
+  a := 0
+  CIKLUS AMÍG i < |beszöveg| **ciklus1
+szo:= szo + beszöveg[i]
+HA beszöveg[i] = ' ' VAGY beszöveg[i] = '!' VAGY beszöveg[i] = '?' VAGY beszöveg[i] = '.' VAGY i+1 = |beszöveg| AKKOR **ha1
+**HA i+1 = |beszöveg| AKKOR **ha5
+**szo:= szo+ beszöveg[i]
+**HA_VÉGE **ha5vege
+
+HA |szo| /= |mit| AKKOR ** ha6
+egyezesek: = 0
+KÜLÖNBEN
+CIKLUS amíg x < |szo| -1 **ciklus2
+HA szo[x] = mit[x+1] AKKOR **ha2
+egyezesek: = egyezesek + 1
+HA_VÉGE **ha2vege
+
+
+x:= x + 1
+CIKLUS_VÉGE **ciklusvege2
+HA_VÉGE **ha6vege
+
+HA egyezesek = |mit|-1 AKKOR **ha3
+KI:mire ki:" "
+x:= 0
+szo:= ""
+egyezesek:= 0
+HA_VÉGE	**ha3vege
+
+HA egyezesek /= |mit| AKKOR **ha4
+ki:szo
+x:= 0
+szo:= ""
+egyezesek:= 0
+HA_VÉGE **ha4vege
+
+
+
+
+
+
+HA_VÉGE **ha1vege
+
+    
+
+i:= i + 1
+  CIKLUS_VÉGE **ciklus1vege
+PROGRAM_VÉGE

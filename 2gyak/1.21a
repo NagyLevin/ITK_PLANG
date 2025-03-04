@@ -1,0 +1,24 @@
+PROGRAM hazi
+VALTOZOK:
+szöveg1,szöveg2:SZÖVEG,
+x,i,a,b,c:EGÉSZ
+BE:szöveg1
+BE:szöveg2
+i:=1
+HA |szöveg1| > |szöveg2| AKKOR x:= |szöveg1|
+HA_VÉGE
+
+HA |szöveg2| > |szöveg1| AKKOR x:= |szöveg2|
+HA_VÉGE
+
+CIKLUS AMÍG i < x
+HA szöveg1[i] = szöveg2[i] AKKOR
+KI: "IGAZ"
+KI: " "
+HA_VÉGE
+i:= i +1
+CIKLUS_VÉGE
+
+
+
+PROGRAM_VÉGE

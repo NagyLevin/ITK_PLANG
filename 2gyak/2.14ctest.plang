@@ -1,0 +1,47 @@
+PROGRAM alma
+  VÁLTOZÓK:
+    i, k, x, y, a, b, c, votmar, egyezes: EGÉSZ,
+    beszöveg, mit, mire, szo: SZÖVEG
+ 
+  BE: beszöveg
+  mit := "körte"
+  mire := "alma"
+  szo := ""
+  egyezes := 0
+  votmar := 0
+  i := 0
+  x := 0
+  k := 0
+  a := 0
+  CIKLUS AMÍG i < |beszöveg|
+    szo := szo + beszöveg[i]
+    x := x + 1
+    HA beszöveg[i] = ' ' AKKOR
+	HA |szo|-1 = |mit| AKKOR
+      CIKLUS AMÍG k < |mit|
+        HA szo[k] = mit[k] AKKOR
+          egyezes := egyezes + 1
+        HA_VÉGE
+	
+        k := k + 1
+      CIKLUS_VÉGE
+HA_VÉGE
+      HA egyezes = |mit| AKKOR
+        CIKLUS AMÍG a < |beszöveg|
+          KI: beszöveg[a]
+          HA a = x - |mit| - 2 AKKOR
+            KI: "alma"
+            a := a + |mit|
+          HA_VÉGE
+          a := a + 1
+        CIKLUS_VÉGE
+        a := 0
+        votmar := 1
+      HA_VÉGE
+      egyezes := 0
+      k := 0
+      szo := ""
+    HA_VÉGE
+    i := i + 1
+  CIKLUS_VÉGE
+PROGRAM_VÉGE
